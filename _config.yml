@@ -1,20 +1,20 @@
 # Header
 menu:
   首页: /
-  友链: /links
-  关于: /about
+  # 友链: /links
+  # 关于: /about
 
 # 主页banner图
-banner: https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg
+# banner: https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg
 
 # 站点通知信息
-notice: flex-block主题部分重构，详情查看https://github.com/miiiku/flex-block
+# notice: flex-block主题部分重构，详情查看https://github.com/miiiku/flex-block
 
 # 作者信息
 author:
-  name: Sukoshi
-  avatar: https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro
-  description: 贵在坚持
+  name: Wayne
+  avatar: https://github.com/waynexia.png
+  # description: 贵在坚持
 
 toc:
   max_depth: 3 # 生成 TOC 的最大深度
@@ -44,7 +44,7 @@ comments:
 # dplayer 视频播放
 # docs: http://dplayer.js.org/#/zh-Hans/
 dplayer:
-  enable: true
+  enable: false
   theme: "#b7daff"
   autoplay: false
   loop: false
@@ -53,7 +53,7 @@ dplayer:
 # aplayer 音频播放
 # docs: https://aplayer.js.org/#/zh-Hans/
 aplayer:
-  enable: true
+  enable: false
   theme: "#b7daff"
   autoplay: false
   loop: false
@@ -82,5 +82,5 @@ social_icon:
     ins     :
     zhihu   :
     weibo   : 
-    github  : https://github.com/miiiku/
-    twitter : https://twitter.com/guanquanhong
+    github  : https://github.com/waynexia/
+    twitter : 
