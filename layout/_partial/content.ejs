@@ -39,13 +39,15 @@
     <div class="widget-info">
       <%- partial("../_widget/widget-author") %>
 
-      <%- partial("../_widget/widget-toc", { page: page }) %>
-
       <%- partial("../_widget/widget-notice") %>
 
       <%- partial("../_widget/widget-categorys") %>
 
       <%- partial("../_widget/widget-tags") %>
+
+      <!-- todo: only sticky TOC list -->
+      <%- partial("../_widget/widget-toc", { page: page }) %>
+
     </div>
   </article>
 </div>

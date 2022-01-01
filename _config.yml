@@ -17,8 +17,9 @@ author:
   # description: 贵在坚持
 
 toc:
+  enable: true # 是否开启目录
+  min_depth: 1 # 生成 TOC 的最小深度
   max_depth: 3 # 生成 TOC 的最大深度
-  min_depth: 2 # 生成 TOC 的最小深度
 
 comments:
   enable: false
