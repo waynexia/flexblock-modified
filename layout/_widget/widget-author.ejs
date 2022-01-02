@@ -24,6 +24,18 @@
         <%= site.tags.length %>
       </div>
     </div>
+
+    <% if (theme.social_icon.enable) { %>
+    <div class="social-icons">
+      <% for (var i in theme.social_icon.icons) { %>
+        <% if (theme.social_icon.icons[i]) { %>
+          <a href="<%= theme.social_icon.icons[i] %>" class="soft-size--primary" target="_blank" rel="noopener noreferrer">
+            <%- partial("../_svg/social-"+ i +".svg") %>
+          </a>
+        <% } %>
+      <% } %>
+    </div>
+    <% } %> 
     
   </div>
 </section>
