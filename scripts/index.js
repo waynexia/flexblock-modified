@@ -32,16 +32,16 @@ const buildDatasObj = (args, defaultObj = {}) => {
  * image tag
  *
  * Syntax:
- *   {% image { url title? } %}
+ *   {% image { url title? width? height? } %}
  */
 hexo.extend.tag.register("image", function(args) {
-  let datas = buildDatasObj(args, { title: "" });
+  let datas = buildDatasObj(args, { title: "", width: "100%", height: "100%" });
 
   if (!datas.url) return "";
 
   return `
     <figure class="figure-image">
-      <img src="${datas.url}" alt="${datas.title}" loading="lazy" />
+      <img src="${datas.url}" alt="${datas.title}" width="${datas.width}" height="${datas.height} loading="lazy" />
       <figcaption>${datas.title}</figcaption>
     </figure>
   `;
