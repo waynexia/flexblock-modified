@@ -14,7 +14,6 @@ banner: https://raw.githubusercontent.com/waynexia/flexblock-modified/main/sourc
 author:
   name: Wayne
   avatar: https://github.com/waynexia.png
-  # description: 贵在坚持
 
 toc:
   enable: true # 是否开启目录
@@ -74,6 +73,7 @@ baidu_analytics:
 tencent_analytics: 
 # 站点ico
 favicon: /favicon.ico
+rss: /atom.xml
 
 
 # Social Icon
@@ -84,4 +84,4 @@ social_icon:
     zhihu   :
     weibo   : 
     github  : https://github.com/waynexia/
-    twitter : 
+    twitter : https://twitter.com/wayne17229928

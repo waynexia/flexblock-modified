@@ -10,7 +10,7 @@
       <p><%= theme.author.description %></p>
     <% } %>
 
-    <div class="count-box">
+    <!-- <div class="count-box">
       <div class="count-box--item">
         <%- partial("../_svg/icon-article.svg") %>
         <span><%= site.posts.length %></span>
@@ -23,7 +23,7 @@
         <%- partial("../_svg/icon-tags.svg") %>
         <%= site.tags.length %>
       </div>
-    </div>
+    </div> -->
 
     <% if (theme.social_icon.enable) { %>
     <div class="social-icons">
@@ -33,6 +33,11 @@
             <%- partial("../_svg/social-"+ i +".svg") %>
           </a>
         <% } %>
+      <% } %>
+      <% if (theme.rss){ %>
+        <a rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+          <%- partial("../_svg/icon-rss.svg") %>
+        </a>
       <% } %>
     </div>
     <% } %> 
