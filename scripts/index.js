@@ -3,11 +3,12 @@ const buildDatas = (args) => {
 
   if (args.length > 0) {
     args.forEach(item => {
-      let kv = item.split("=");
-      if (!kv[1]) {
-        datas += `data-${kv[0]} `
+      let [key, ...values] = item.split("=");
+      let value = values.join("=");
+      if (!value) {
+        datas += `data-${key} `
       } else {
-        datas += `data-${kv[0]}='${kv[1]}' `;
+        datas += `data-${key}='${value}' `;
       }
     });
   }

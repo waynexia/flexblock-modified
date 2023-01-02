@@ -54,7 +54,7 @@ dplayer:
 # aplayer 音频播放
 # docs: https://aplayer.js.org/#/zh-Hans/
 aplayer:
-  enable: false
+  enable: true
   theme: "#b7daff"
   autoplay: false
   loop: false
